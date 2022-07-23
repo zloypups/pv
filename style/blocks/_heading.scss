@@ -1,0 +1,57 @@
+.header {
+    background-color: #222222;
+    color: $background-color;
+    padding: 19px 0;
+}
+
+.header-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logosvgshka svg {
+    fill: green;
+}
+
+.logosvg:hover svg {
+    fill: rgb(251, 13, 13);
+}
+
+.header_right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header_search,
+.header_menu {
+    background-color: transparent;
+    border: none;
+    color: inherit;
+    display: inline-block;
+}
+
+.header_icon {
+    background-color: transparent;
+    border: none;
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+
+.header_icon svg {
+    fill: #f8f8f8;
+}
+
+.header_icon:hover svg {
+    fill: $main-color;
+    transition: fill 0.3s;
+
+}

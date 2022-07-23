@@ -1,0 +1,36 @@
+.footer {
+    background-color: #222;
+    color: $background-color;
+}
+
+.footer_block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_text {
+    margin: 30px 0;
+}
+
+.social_group {
+    display: flex;
+}
+
+.social_link {
+    color: #222;
+    background: $background-color;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    text-decoration: none;
+    margin: 24px 8px 24px 8px;
+
+    &:hover {
+        color: $background-color;
+        background: $main-color;
+        transition: background 0.3s, color 0.3s;
+    }
+}

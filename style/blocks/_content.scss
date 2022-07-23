@@ -1,0 +1,78 @@
+.content {
+    background: #E5E5E5;
+    flex-grow: 1;
+}
+
+.content_looc_block {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 30;
+}
+
+.content_looc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 360px;
+
+
+}
+
+.look2 {
+    background: url(../img/background_look2.png);
+    height: 420px;
+    width: 360px;
+}
+
+.img_looc_2 {
+    margin-left: 80px;
+}
+
+.content_heading {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    color: #222222;
+    text-align: center;
+    margin-top: 96px;
+    margin-bottom: 6px;
+}
+
+.content_p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #9F9F9F;
+    margin-top: 0px;
+    margin-bottom: 57px;
+}
+
+.heading_mini {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #000000;
+    margin: 15px 0 15px 0;
+    text-align: left;
+
+
+}
+
+.content_text {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #9F9F9F;
+    width: 306px;
+    margin: 0 0 15px 0;
+}
+
+.content_sale {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: $main-color;
+    padding: 0 0 50px 0;
+}

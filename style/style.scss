@@ -1,0 +1,59 @@
+/* переменные */
+$main-color: #EF5B70;
+$desktop-width: 1140px;
+$background-color: #fff;
+
+/* примеси */
+
+@mixin center {
+    display: flex;
+    justify-content: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Lato', sans-serif;
+    ;
+}
+
+.wrap {
+    width: $desktop-width;
+    outline: 1px solid red;
+    margin: 0 auto;
+}
+
+@import 'blocks/heading';
+
+@import 'blocks/promo';
+
+@import 'blocks/breadcrumbs';
+
+@import 'blocks/filter';
+
+@import 'blocks/preview';
+
+@import 'blocks/category';
+
+@import 'blocks/content';
+
+@import 'blocks/pagination';
+
+@import 'blocks/productsubmit';
+
+@import 'blocks/offer';
+
+@import 'blocks/subscribe';
+
+@import 'blocks/footer';
+
+@import 'blocks/cartform';
+
+@import 'blocks/registration';

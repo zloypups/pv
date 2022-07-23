@@ -1,0 +1,25 @@
+.promo {
+    background: #F1E4E6;
+    min-height: 765px;
+}
+
+.promo_block {
+    display: flex;
+}
+
+.promo_men {
+    margin-left: -225px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+}
+
+.page_title {
+    color: $main-color;
+
+    font-size: 24px;
+
+    padding: 60px 0 60px 0;
+}

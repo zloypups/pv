@@ -1,0 +1,29 @@
+.product_submit {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: $main-color;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 63px;
+    margin-bottom: 95px;
+    border: 1px solid$main-color;
+    padding: 14px 38px;
+
+    &:hover {
+        background-color: $main-color;
+        color: $background-color;
+        transition: background-color 0.3s, color 0.3s;
+    }
+}
+
+.conteiner {
+    width: 300px;
+}
+
+.submit_product {
+    display: flex;
+    justify-content: center;
+}

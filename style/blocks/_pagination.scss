@@ -1,0 +1,46 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.pagination-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+}
+
+.pagination-item--separator {
+    margin: 0 -10px;
+    color: grey;
+}
+
+.pagination-link {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #b0adae;
+    border: none;
+}
+
+.pagination-link:hover {
+    color: black;
+    transition: color 0.3s;
+}
+
+.pagination-link svg {
+    fill: rgb(0, 0, 0);
+
+}
+
+.pagination-link:hover svg {
+    fill: $main-color;
+}
+
+
+.pagination-link--active {
+    color: $main-color;
+}
