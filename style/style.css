@@ -787,11 +787,21 @@ body {
 }
 
 .registration-button {
+  display: flex;
   padding: 17px 54px 17px 54px;
   background-color: #EF5B70;
   border: none;
   border-radius: 5px;
   color: #fff;
+}
+
+.join:hover {
+  transform: translateX(-20px);
+  transition: transform 0.3s;
+}
+
+.join:hover:after {
+  content: url(/img/strelka.svg);
 }
 
 .benefits {
