@@ -46,6 +46,57 @@
     color: $background-color;
 }
 
-.join {}
 
-.button-adaptiv {}
+
+
+
+.benefits {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    color: #837575;
+    width: 652px;
+}
+
+.benefits-heading {
+    display: flex;
+    list-style-type: none;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    width: 652px;
+    color: #837575;
+    margin: 0 0 22px 0;
+}
+
+.benefits-text {
+    display: flex;
+    list-style-type: none;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    width: 652px;
+    color: #837575;
+    margin: 0 0 20px 0;
+
+}
+
+.benefits-text-list {
+    display: flex;
+    list-style-type: none;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    width: 652px;
+    color: #837575;
+    margin: 0 0 16px 0;
+}
+
+.benefits-text-list svg {
+    fill: black;
+    margin: 7px 22px 0 0;
+
+}
