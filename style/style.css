@@ -390,16 +390,42 @@ body {
   flex-direction: column;
   justify-content: space-between;
   width: 360px;
+  position: relative;
 }
 
-.look2 {
-  background: url(../img/background_look2.png);
+.products-owerlay {
+  display: none;
+  position: absolute;
+  background: rgba(58, 56, 56, 0.86);
+  width: 100%;
   height: 420px;
-  width: 360px;
+  display: none;
+  justify-content: center;
+  align-items: center;
 }
 
-.img_looc_2 {
-  margin-left: 80px;
+.content_looc:hover .products-owerlay {
+  display: flex;
+}
+
+.btn-add {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.btn-add-icon,
+.btn-add-text {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.btn-add-icon {
+  margin-right: 10px;
+}
+
+.cart-product {
+  text-decoration: none;
 }
 
 .content_heading {
