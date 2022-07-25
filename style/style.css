@@ -102,7 +102,6 @@ body {
 }
 
 .breadcrumbs {
-  padding: 20px;
   background: #F8F3F4;
   display: flex;
   justify-content: space-between;
@@ -119,6 +118,7 @@ body {
 .breadcrumbs-item::before {
   content: "/";
   margin-right: 10px;
+  color: #636363;
 }
 
 .breadcrumbs-item:first-child::before {
@@ -145,53 +145,76 @@ body {
   color: #EF5B70;
 }
 
-.Filter_menu {
+.filter-block {
   display: flex;
   align-items: center;
-  margin: 100px 0 0 10px;
 }
 
 .filter {
+  display: block;
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
   color: #000000;
-  margin: 0 330px 0 20px;
+  margin: 0 330px 0 0;
 }
 .filter:hover {
   color: #EF5B70;
   transition: color0, 0.3s;
 }
 
-.filter_svg svg {
-  margin: 0 0 0 10px;
+.filter-title {
+  display: block;
+  position: relative;
+  width: 360px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.filter-title svg {
   fill: #000000;
 }
 
-.filter_svg:hover svg {
+.filter-title:hover svg {
   fill: #EF5B70;
-  transition: fill 0.3s;
+  transition: 0.3s;
 }
 
-.filter_two {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
+.filter-item {
+  width: 360px;
+  position: relative;
+  margin-bottom: 18px;
+}
+
+.filter-name {
+  display: block;
+  padding: 15px 15px 15px 0;
+  border-left: 5px solid #EF5B70;
+  border-bottom: 1px solid #EBEBEB;
   color: #6F6E6E;
+  text-transform: uppercase;
 }
-.filter_two:hover {
+
+.filter-title::-webkit-details-marker {
+  display: none;
+}
+
+.filter-name::-webkit-details-marker {
+  display: none;
+}
+
+.filter-item[open] .filter-name {
   color: #EF5B70;
-  transition: color0, 0.3s;
 }
 
-.filter_two svg {
-  fill: #6F6E6E;
-  margin: 0 30px 2px 10px;
-  align-items: center;
+.filter-list {
+  padding-left: 0;
+  list-style-type: none;
 }
 
-.filter_two:hover svg {
-  fill: #EF5B70;
+.filter-list-button {
+  border: none;
+  margin-bottom: 10px;
 }
 
 .preview {
@@ -745,33 +768,6 @@ body {
   flex-direction: column;
 }
 
-/*.heading-cart {
-    display: flex;
-    flex-direction: column;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 29px;
-    color: #222222;
-}
-
-.characteristics {
-    display: flex;
-    flex-direction: column;
-}
-
-.description-cart {}
-
-.werty {}
-
-.cart-form {}
-
-
-.cart-form-block {
-    display: flex;
-    flex-direction: column;
-}
-
-.form-input {}*/
 .registration {
   display: flex;
   justify-content: space-between;

@@ -1,16 +1,17 @@
-.Filter_menu {
+.filter-block {
     display: flex;
     align-items: center;
-    margin: 100px 0 0 10px;
 
 }
 
 .filter {
+    display: block;
     font-weight: 600;
     font-size: 14px;
     line-height: 17px;
     color: #000000;
-    margin: 0 330px 0 20px;
+    margin: 0 330px 0 0;
+
 
     &:hover {
         color: $main-color;
@@ -18,36 +19,57 @@
     }
 }
 
-.filter_svg svg {
-    margin: 0 0 0 10px;
+.filter-title {
+    display: block;
+    position: relative;
+    width: 360px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.filter-title svg {
     fill: #000000;
 }
 
-.filter_svg:hover svg {
+.filter-title:hover svg {
     fill: $main-color;
-    transition: fill 0.3s;
+    transition: 0.3s;
 }
 
+.filter-item {
+    width: 360px;
+    position: relative;
+    margin-bottom: 18px;
+}
 
-.filter_two {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
+.filter-name {
+    display: block;
+    padding: 15px 15px 15px 0;
+    border-left: 5px solid $main-color;
+    border-bottom: 1px solid #EBEBEB;
     color: #6F6E6E;
-
-    &:hover {
-        color: $main-color;
-        transition: color0, 0.3s;
-    }
+    text-transform: uppercase;
 }
 
-.filter_two svg {
-    fill: #6F6E6E;
-    margin: 0 30px 2px 10px;
-    align-items: center;
 
+.filter-title::-webkit-details-marker {
+    display: none;
 }
 
-.filter_two:hover svg {
-    fill: $main-color;
+.filter-name::-webkit-details-marker {
+    display: none;
+}
+
+.filter-item[open] .filter-name {
+    color: $main-color;
+}
+
+.filter-list {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.filter-list-button {
+    border: none;
+    margin-bottom: 10px;
 }

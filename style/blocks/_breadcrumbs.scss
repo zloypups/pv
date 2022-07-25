@@ -1,5 +1,4 @@
 .breadcrumbs {
-    padding: 20px;
     background: #F8F3F4;
     display: flex;
     justify-content: space-between;
@@ -16,6 +15,7 @@
 .breadcrumbs-item::before {
     content: '/';
     margin-right: 10px;
+    color: #636363;
 }
 
 .breadcrumbs-item:first-child::before {
