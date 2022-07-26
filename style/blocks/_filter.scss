@@ -1,6 +1,6 @@
 .filter-block {
     display: flex;
-    align-items: center;
+    ;
 
 }
 
@@ -10,13 +10,22 @@
     font-size: 14px;
     line-height: 17px;
     color: #000000;
-    margin: 0 330px 0 0;
+    
 
 
     &:hover {
         color: $main-color;
         transition: color0, 0.3s;
     }
+}
+
+.filter-overlay {
+    position: absolute;
+    z-index: 10;
+    background-color: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+    /* box-shadow дает клина на компиляцию SCSS*/
 }
 
 .filter-title {
@@ -72,4 +81,8 @@
 .filter-list-button {
     border: none;
     margin-bottom: 10px;
+}
+
+.filter-sotr-name {
+    color: rgb(135, 129, 129);
 }

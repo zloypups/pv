@@ -1,0 +1,49 @@
+.filter-sort-block {
+    display: flex;
+}
+
+.filter-sort-overlay {
+    position: relative;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+
+.filter-sotr-name {
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+    display: block;
+    align-items: center;
+    
+}
+
+.filter-sotr-name::after {
+    content: url(/img/corner.svg);
+    margin: 0 10px 0 10px;
+}
+
+.filter-sotr-name::-webkit-details-marker {
+    display: none;
+}
+
+.filter-sort-list {
+    position: absolute;
+    z-index: 10;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.filter-sort-button {
+    border: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+}
