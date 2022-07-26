@@ -55,3 +55,66 @@
     transition: fill 0.3s;
 
 }
+
+.main-nav-box {
+    margin: 40px 0 0 0;
+}
+
+.main-nav-close {
+    border: none;
+   margin-right: 30px;
+}
+
+.main-nav {
+    width: 232px;
+    height: 765px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    top: 80px;
+    color: #000;
+    transition: 0.5s;
+}
+
+.main-nav-list {
+    margin: 10px;
+}
+
+.submenu-list {
+    margin: 10px;
+}
+
+.submenu-item {
+    margin: 10px;
+}
+
+.main-nav-title {
+    color: rgb(201, 37, 37);
+    margin: 90px 0 10px 0;
+}
+
+.submenu-link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+}
+
+.main-nav-link {
+    color: $main-color;
+    margin: 10px 0;
+}
+
+.main-nav-list, .submenu-list {
+    list-style-type: none;
+}
+
+.main-nav-link, .submenu-link {
+    text-decoration: none;
+}
+
+.main-nav-close {
+    display: none;
+}
