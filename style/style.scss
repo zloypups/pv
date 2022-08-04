@@ -25,7 +25,8 @@ body {
 }
 
 .wrap {
-    width: $desktop-width;
+    max-width: 1140px;
+    width: 100%;
     outline: 1px solid red;
     margin: 0 auto;
 }

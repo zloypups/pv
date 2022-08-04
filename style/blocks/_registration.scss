@@ -54,6 +54,7 @@
 
 .join:hover:after {
     content: url(/img/strelka.svg);
+    margin-left: 20px;
 }
 
 .benefits {
@@ -103,4 +104,45 @@
 .benefits-text-list svg {
     fill: black;
     margin: 7px 22px 0 0;
+}
+
+/* tablet */
+@media  (max-width: 1200px) {
+
+    .benefits {
+        width: 354px;
+    }
+    
+    .benefits-heading {
+        display: flex;
+        list-style-type: none;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px; 
+        width: 354px;
+        color: #837575;
+        margin: 0 0 22px 0;
+    }
+
+    .benefits-text {
+        display: flex;
+        list-style-type: none;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        width: 354px;
+        color: #837575;
+        margin: 0 0 20px 0;
+    }
+    
+    .benefits-text-list {
+        display: flex;
+        list-style-type: none;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        width: 354px;
+        color: #837575;
+        margin: 0 0 16px 0;
+    }
 }

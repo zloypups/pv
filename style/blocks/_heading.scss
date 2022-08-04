@@ -118,3 +118,13 @@
 .main-nav-close {
     display: none;
 }
+
+/* tablet */
+
+@media  (max-width: 1200px) {
+    .wrap {
+        width: 768px;
+    }
+}
+
+/* mobile */

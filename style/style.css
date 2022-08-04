@@ -15,7 +15,8 @@ body {
 }
 
 .wrap {
-  width: 1140px;
+  max-width: 1140px;
+  width: 100%;
   outline: 1px solid red;
   margin: 0 auto;
 }
@@ -140,34 +141,72 @@ body {
   display: none;
 }
 
-.promo {
-  background: #F1E4E6;
-  min-height: 765px;
+/* tablet */
+@media (max-width: 1200px) {
+  .wrap {
+    width: 768px;
+  }
 }
-
-.promo_block {
-  display: flex;
-}
-
-.promo_men {
-  margin-left: -225px;
-}
-
+/* mobile */
 .brand {
+  background: #F1E4E6;
+  margin: 0 0 65px 0;
+}
+
+.brand-wrap {
+  background: url(/img/promo_men.png) no-repeat -220px;
+  min-height: 764px;
   display: flex;
+  justify-content: flex-end;
   align-items: center;
 }
 
-.page_title {
-  color: #EF5B70;
-  font-size: 24px;
-  padding: 60px 0 60px 0;
+.brand-litle {
+  margin: 0 101px 91px 0;
+  padding: 0 0 0 16px;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 58px;
+  border-left: 12px solid #EF5B70;
 }
 
+.brand-text {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+}
+
+.brand-decor {
+  color: #F16D7F;
+}
+
+/* tablet  786*/
+@media (max-width: 1200px) {
+  .brand-wrap {
+    min-height: 360px;
+    background-size: 50%;
+    background-position: 0 50%;
+  }
+  .brand-litle {
+    background-size: 50%;
+  }
+}
+/* mabile */
 .breadcrumbs {
+  width: 1140px;
+  height: 148px;
   background: #F8F3F4;
   display: flex;
   justify-content: space-between;
+}
+
+.page_title_name {
+  color: #EF5B70;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
 }
 
 .breadcrumbs-list {
@@ -176,6 +215,7 @@ body {
   padding: 0;
   display: flex;
   gap: 20px;
+  align-items: center;
 }
 
 .breadcrumbs-item::before {
@@ -208,8 +248,24 @@ body {
   color: #EF5B70;
 }
 
+/* tablet 768 */
+@media (max-width: 1200px) {
+  .page_title {
+    width: 768px;
+  }
+  .page_title_wrap {
+    width: 768px;
+  }
+  .breadcrumbs {
+    width: 768px;
+  }
+  .filter-block {
+    width: 768px;
+  }
+}
 .filter-block {
   display: flex;
+  margin: 52px 0 65PX 0;
 }
 
 .filter {
@@ -221,7 +277,7 @@ body {
 }
 .filter:hover {
   color: #EF5B70;
-  transition: color0, 0.3s;
+  transition: color, 0.3s;
 }
 
 .filter-overlay {
@@ -291,6 +347,15 @@ body {
   color: rgb(135, 129, 129);
 }
 
+/* tablet */
+@media (max-width: 1200px) {
+  .filter-block {
+    width: 768px;
+  }
+  .filter {
+    width: 768px;
+  }
+}
 .preview {
   margin-top: 10px;
   display: flex;
@@ -426,55 +491,111 @@ body {
 
 .category_group {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 30px;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
-.category_other {
+.categori-women {
+  background: url(/img/Group_women.png) no-repeat;
+  height: 260px;
+  width: 360px;
   display: flex;
-  flex-grow: 1;
-  position: relative;
+  justify-content: center;
+  align-items: center;
 }
 
-.category_text_other {
-  position: absolute;
-  top: 60px;
-  left: 420px;
-  font-weight: 400;
-  font-size: 25px;
-  line-height: 19px;
-  text-align: center;
-  color: #FFFFFF;
+.categori-men {
+  background: url(/img/Group_men.png) no-repeat;
+  height: 260px;
+  width: 360px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.categori-kids {
+  background: url(/img/Group_kids.png) no-repeat;
+  height: 260px;
+  width: 360px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.category-acc {
+  background: url(/img/accesories.png) no-repeat;
+  height: 180px;
+  width: 1140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .category_text {
-  position: absolute;
-  top: 115px;
-  right: 140px;
+  text-align: center;
   font-weight: 400;
   font-size: 16px;
-  line-height: 19px;
-  text-align: center;
+  line-height: 26px;
   color: #FFFFFF;
 }
 
 .category_span {
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 26px;
   color: #EF5B70;
-  font-size: 25px;
-  line-height: 30px;
-  font-weight: 600;
 }
 
-.categori_window {
-  position: relative;
-  display: flex;
-  align-items: center;
+/* tablet 768 */
+@media (max-width: 1200px) {
+  .category_group {
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .categori-women {
+    text-align: center;
+    width: 232px;
+    height: 167px;
+  }
+  .categori-men {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 232px;
+    height: 167px;
+  }
+  .categori-kids {
+    text-align: center;
+    width: 232px;
+    height: 167px;
+  }
+  .category-acc {
+    text-align: center;
+    width: 750px;
+  }
 }
-
-.category_text_accesories {
-  position: absolute;
+/* mabile*/
+@media (max-width: 400px) {
+  .category_group {
+    display: flex;
+    flex-direction: column;
+  }
+  .categori-women {
+    width: 360px;
+    height: 260px;
+  }
+  .categori-men {
+    width: 360px;
+    height: 260px;
+  }
+  .categori-kids {
+    width: 360px;
+    height: 260px;
+  }
+  .category-acc {
+    width: 360px;
+  }
 }
-
 .content {
   background: #E5E5E5;
   flex-grow: 1;
@@ -484,14 +605,36 @@ body {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  row-gap: 30;
+  gap: 30px;
 }
 
 .content_looc {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-between;
   width: 360px;
+  gap: 30px;
+  position: relative;
+}
+
+.content-looc-catalog {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 360px;
+  gap: 30px;
+  position: relative;
+}
+
+.content-looc-product {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 360px;
+  gap: 30px;
   position: relative;
 }
 
@@ -507,6 +650,14 @@ body {
 }
 
 .content_looc:hover .products-owerlay {
+  display: flex;
+}
+
+.content-looc-catalog:hover .products-owerlay {
+  display: flex;
+}
+
+.content-looc-product:hover .products-owerlay {
   display: flex;
 }
 
@@ -576,6 +727,21 @@ body {
   padding: 0 0 50px 0;
 }
 
+/* tablet */
+@media (max-width: 1200px) {
+  .content_looc_block {
+    gap: 10px;
+  }
+  .content-looc-catalog:nth-child(3) {
+    display: none;
+  }
+}
+/* tablet */
+@media (max-width: 1200px) {
+  .content-looc-product:nth-child(3) {
+    display: none;
+  }
+}
 .pagination {
   display: flex;
   justify-content: center;
@@ -650,17 +816,20 @@ body {
   justify-content: center;
 }
 
+.speshial_offer {
+  height: 341px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .offer_block {
   display: flex;
   justify-content: space-around;
 }
 
 .offer {
-  display: block;
-  align-items: center;
   width: 330px;
-  margin-top: 104px;
-  margin-bottom: 104px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -691,6 +860,21 @@ body {
   color: #FBFBFB;
 }
 
+/* tablet 768 */
+@media (max-width: 1200px) {
+  .speshial_offer {
+    height: 768px;
+  }
+  .offer_block {
+    height: 768px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .offer {
+    margin-top: 48px;
+  }
+}
 .subscribe {
   background: url("../img/subscribe_fon.png"), url("../img/subscribe.jpg") no-repeat center;
   background-size: cover;
@@ -777,6 +961,26 @@ body {
   color: #222224;
 }
 
+/* tablet 768*/
+@media (max-width: 1200px) {
+  .subscribe_wrap {
+    display: flex;
+    flex-direction: column;
+  }
+  .subscibe_left {
+    margin-top: 53px;
+  }
+  .subscribe_right {
+    margin-bottom: 140px;
+  }
+}
+/* mobile */
+@media (max-width: 780px) {
+  .subscribe_wrap {
+    display: flex;
+    justify-content: center;
+  }
+}
 .footer {
   background-color: #222;
   color: #fff;
@@ -903,6 +1107,7 @@ body {
 
 .join:hover:after {
   content: url(/img/strelka.svg);
+  margin-left: 20px;
 }
 
 .benefits {
@@ -954,6 +1159,42 @@ body {
   margin: 7px 22px 0 0;
 }
 
+/* tablet */
+@media (max-width: 1200px) {
+  .benefits {
+    width: 354px;
+  }
+  .benefits-heading {
+    display: flex;
+    list-style-type: none;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    width: 354px;
+    color: #837575;
+    margin: 0 0 22px 0;
+  }
+  .benefits-text {
+    display: flex;
+    list-style-type: none;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    width: 354px;
+    color: #837575;
+    margin: 0 0 20px 0;
+  }
+  .benefits-text-list {
+    display: flex;
+    list-style-type: none;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    width: 354px;
+    color: #837575;
+    margin: 0 0 16px 0;
+  }
+}
 .filter-sort-block {
   display: flex;
 }

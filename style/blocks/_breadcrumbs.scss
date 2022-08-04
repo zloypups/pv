@@ -1,15 +1,26 @@
 .breadcrumbs {
+    width: 1140px;
+    height: 148px;
     background: #F8F3F4;
     display: flex;
     justify-content: space-between;
 }
 
+.page_title_name {
+color: $main-color;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+display: flex;
+align-items: center;
+}
 .breadcrumbs-list {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
     gap: 20px;
+    align-items: center;
 }
 
 .breadcrumbs-item::before {
@@ -40,4 +51,21 @@
 .breadcrumbs-link[href]:hover {
     text-decoration: underline;
     color: $main-color;
+}
+
+/* tablet 768 */ 
+@media (max-width: 1200px) {
+    .page_title {
+        width: 768px;
+    }
+    .page_title_wrap {
+        width: 768px;
+    }
+    .breadcrumbs {
+        width: 768px;
+    }
+
+    .filter-block {
+        width: 768px;
+    }
 }

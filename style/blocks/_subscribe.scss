@@ -80,3 +80,27 @@
     text-align: center;
     color: #222224;
 }
+
+/* tablet 768*/
+
+@media (max-width: 1200px) {
+    .subscribe_wrap {
+        display: flex;
+        flex-direction: column;
+}
+.subscibe_left {
+    margin-top: 53px;
+}
+.subscribe_right {
+    margin-bottom: 140px;
+}
+}
+
+/* mobile */
+
+@media (max-width: 780px) {
+    .subscribe_wrap {
+        display: flex;
+        justify-content: center;
+    }
+}

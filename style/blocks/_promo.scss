@@ -1,25 +1,53 @@
-.promo {
-    background: #F1E4E6;
-    min-height: 765px;
-}
-
-.promo_block {
-    display: flex;
-}
-
-.promo_men {
-    margin-left: -225px;
-}
-
 .brand {
+    background: #F1E4E6;
+    margin: 0 0 65px 0;
+}
+
+.brand-wrap {
+    background: url(/img/promo_men.png) no-repeat -220px; 
+    min-height: 764px;
     display: flex;
+    justify-content: flex-end;
     align-items: center;
 }
 
-.page_title {
-    color: $main-color;
 
-    font-size: 24px;
+.brand-litle {
+    margin: 0 101px 91px 0;
+    padding: 0 0 0 16px;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px; 
+    border-left: 12px solid $main-color;
 
-    padding: 60px 0 60px 0;
+}
+
+.brand-text {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+}
+
+.brand-decor {
+    color: #F16D7F;
+}
+
+/* tablet  786*/
+
+@media (max-width: 1200px) {
+    .brand-wrap {
+        min-height: 360px;
+        background-size: 50%;
+        background-position: 0 50%;
+    }
+
+    .brand-litle {
+        background-size: 50%;
+    }
+}
+
+/* mabile */
+
+@media (max-width: 780px) {
+   
 }
