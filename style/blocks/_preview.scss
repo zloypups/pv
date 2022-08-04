@@ -85,12 +85,16 @@
     font-weight: 300;
     font-size: 24px;
     line-height: 29px;
-    margin: 33px 0 130px 0;
+    text-align: center;
+    margin: 32px 0 130px 0;
     color: #EF5B70;
 }
 
 .product_sort {
     @include center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
     
 }
 
@@ -126,4 +130,16 @@
 
 .sort::-webkit-details-marker {
     display: none;
+}
+
+/* mobile */
+
+@media  (max-width: 797px) {
+    .product_sort {
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 12px;
+        display: flex;
+        justify-content: space-between;
+    }
 }

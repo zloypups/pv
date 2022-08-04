@@ -35,3 +35,12 @@
     }
 }
 
+/* mobile */
+
+@media  (max-width: 797px) {
+    .footer_block {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}

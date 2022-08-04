@@ -1,5 +1,6 @@
 .filter-sort-block {
     display: flex;
+   
 }
 
 .filter-sort-overlay {
@@ -12,8 +13,8 @@
 .filter-sotr-name {
     display: block;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 12px;
+    line-height: 14px;
     color: #6F6E6E;
     display: block;
     align-items: center;
@@ -47,3 +48,15 @@
     line-height: 16px;
     text-transform: uppercase;
 }
+
+/* mobile */
+
+@media  (max-width: 797px) {
+
+    .filter-sotr-name::after {
+        content: url(/img/corner.svg);
+        margin: 0 8px 0 8px;
+    }
+        
+    }
+    

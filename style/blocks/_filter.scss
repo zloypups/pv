@@ -1,6 +1,7 @@
 .filter-block {
     display: flex;
     margin: 52px 0 65PX 0;
+    justify-content: space-around;
 }
 
 .filter {
@@ -28,7 +29,6 @@
 .filter-title {
     display: block;
     position: relative;
-    width: 360px;
     padding: 0;
     cursor: pointer;
 }
@@ -92,5 +92,20 @@
     .filter {
         width: 768px;
     }
+
+}
+
+/* mobile */
+
+@media  (max-width: 797px) {
+
+.filter-block {
+    width: 360px;
+    
+}
+
+.filter {
+    width: 100px;
+}
 
 }

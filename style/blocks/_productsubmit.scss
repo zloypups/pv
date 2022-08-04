@@ -23,7 +23,15 @@
     width: 300px;
 }
 
+
 .submit_product {
     display: flex;
     justify-content: center;
+}
+
+@media (max-width: 797px) {
+    .description_product {
+        text-align: center;
+        width: 360px;
+    }
 }

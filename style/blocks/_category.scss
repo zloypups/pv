@@ -90,11 +90,11 @@
     
         .category-acc {
             text-align: center;
-            width: 750px;
+            width: 768px;
         }
     }
      /* mabile*/
-     @media (max-width: 400px) {
+     @media  (max-width: 797px) {
         .category_group {
             display: flex;
             flex-direction: column;
@@ -117,3 +117,5 @@
             width: 360px;
         }
      }
+
+     

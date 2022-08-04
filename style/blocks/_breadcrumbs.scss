@@ -67,5 +67,27 @@ align-items: center;
 
     .filter-block {
         width: 768px;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* mabile */
+     
+@media  (max-width: 797px) {
+    .page_title {
+        width: 360px;
+    }
+    .breadcrumbs {
+        width: 360px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .page_title_name {
+        margin-bottom: 32px;
     }
 }
