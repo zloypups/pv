@@ -90,10 +90,11 @@
 /* tablet */
 @media (max-width: 1200px) {
     .filter-block {
-        width: 768px;
+        justify-content: space-between;
     }
+    
     .filter {
-        width: 768px;
+        width: 600px;
     }
 
 }
