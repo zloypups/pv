@@ -12,7 +12,7 @@
 }
 
 
-.brand-litle {
+.brand-title {
     margin: 0 101px 91px 0;
     padding: 0 0 0 16px;
     font-weight: 900;
@@ -52,5 +52,27 @@
     .preview_photo {
         width: 374px;
         height: 454px;
+    }
+    .brand-wrap {
+        
+        background: transparent;
+    }
+    .brand-title {
+        width: 236px;
+        height: 66px;
+        font-weight: 900;
+        font-size: 34px;
+       
+    }
+
+    .brand-text {
+        font-weight: 900;
+        font-size: 16px;
+        
+    }
+    .brand-decor {
+        font-weight: 900;
+        font-size: 16px;
+        line-height: 36px;
     }
 }

@@ -1,10 +1,13 @@
 .filter-block {
     display: flex;
     margin: 52px 0 65PX 0;
-    justify-content: space-around;
+    
+    
+    
 }
 
 .filter {
+    width: 360px;
     display: block;
     font-weight: 600;
     font-size: 14px;
@@ -103,9 +106,17 @@
     width: 360px;
     
 }
-
 .filter {
-    width: 100px;
+    width: 36px;
+    margin-right: 61px;
+   
+}
+.filter svg{
+    width: 38px;
+    height: 25px;
+}
+.filter-span {
+    display: none;
 }
 
 }
